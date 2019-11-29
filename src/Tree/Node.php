@@ -40,6 +40,7 @@ class Node implements \JsonSerializable
     {
 //         $this->properties = array_change_key_case($properties, CASE_LOWER);
 //         unset($this->properties['id'], $this->properties['parent']);
+        $this->properties = $properties;
         $this->properties['id'] = $id;
         $this->properties['parent'] = $parent;
     }
